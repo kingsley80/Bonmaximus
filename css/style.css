@@ -1,0 +1,215 @@
+body{
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin:0;
+    background-color: #f4f4f4;
+  }
+
+  /* Global */
+    .container{  
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+  }
+
+  #container{
+    width: 100%;
+    height: 488px;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+
+  .load{
+  animation: slide 10s;
+}
+
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 78vh;
+  animation: slide 30s infinite;
+}
+
+.content{
+  color: #fff;
+  width: 100%;
+  height: 78vh;
+}
+
+.principal{
+  
+}
+
+.principal h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.principal p{
+  font-size: 20px;
+}
+
+@keyframes slide{
+  0%{
+    background-image: url('../img/p1.jpg');
+  }
+  20%{
+    background-image: url('../img/p2.jpg');
+  }
+  20.01%{
+    background-image: url('../img/p3.jpg');
+  }
+  40%{
+    background-image: url('../img/sl1.jpg');
+  }
+  40.01%{
+    background-image: url('../img/sl2.jpg');
+  }
+  60%{
+    background-image: url('../img/sl4.jpg');
+  }
+  60.01%{
+    background-image: url('../img/garrett-parker-247225-unsplash.jpg');
+  }
+  80%{
+    background-image: url('../img/sl5.jpg');
+  }
+  80.01%{
+    background-image: url('../img/veko.jpg');
+  }
+  100%{
+    background-image: url('../img/sl6.jpg');
+  }
+  }
+
+
+/* dropdown area */
+  
+.menu{
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+  padding: 0 100px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+
+
+nav{
+  position: relative;
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 33px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background: rgba(0,0,0,.8);
+  color: #fff;
+
+}
+
+nav ul li ul{
+  display: block;
+  background: rgba(0,0,0,.5);
+  min-width: 250px;
+  position: absolute;
+  margin-top: 1px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  transform: translateY(40px);
+}
+
+nav ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+
+
+}
+
+nav ul li ul li a{
+  padding: 10px;
+}
+
+.logo{
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  padding: 20px;
+  color: #fff;
+}
+
+/* products */
+   ul#products li{
+   	list-style: none;
+   	padding: 20px;
+   	border: #cccccc solid 1px;
+   	margin-bottom: 5px;
+   	background: #ddd;
+   }
+
+    header .current a{
+   	color: powderblue;
+   	font-weight: bold;
+   }
+
+    /* boxes */
+   #boxes{
+    margin-top: 20px;
+   }
+
+   #boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+   }
+
+   #boxes .box img{
+    width: 160px;
+    height: 150px;
+   }
+
+   img{
+    border-radius: 50%;
+   }
+
+   .logo .highlight, .logo .current a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+   }
+
+   footer{
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    margin-top: 100px;
+   }
+
+
+
+  
